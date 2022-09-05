@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Sign Up</title>
+    <link rel="shortcut icon" type="x-icon" href="./images/3.png" />
+    <link rel="stylesheet" type="text/css" href="form.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body class="bg">
+    <div class="container" id="container">
+      <div class="form-container sign-up-container">
+        <form action="">
+          <h1>Create Account</h1>
+          <div class="social-container">
+            <a href="https://www.instagram.com/iyaaz.hakimi/" class="social"
+              ><i class="fab fa-instagram"></i
+            ></a>
+            <a href="https://twitter.com/iyaazhakimi" class="social"
+              ><i class="fab fa-twitter"></i
+            ></a>
+            <a href="https://www.linkedin.com/in/iyaazhakimi/" class="social"
+              ><i class="fab fa-linkedin"></i
+            ></a>
+            <a href="https://www.facebook.com/iyaazhakimi" class="social"
+              ><i class="fab fa-facebook-f"></i
+            ></a>
+          </div>
+          <span>or use your email for registration</span>
+          <input type="text" name="name" placeholder="Name" />
+          <input type="email" name="email" placeholder="Email" />
+          <input type="password" name="password" placeholder="Password" />
+          <div class="sign-up">
+            <form action="./index.html">
+              <input type="submit" name="submit" value="Sign Up" />
+            </form>
+          </div>
+        </form>
+      </div>
+    </div>
+    <script>
+      const signUpButton = document.getElementById("signUp");
+      const container = document.getElementById("container");
+
+      signUpButton.addEventListener("click", () => {
+        container.classList.add("right-panel-active");
+      });
+    </script>
+  </body>
+</html>
